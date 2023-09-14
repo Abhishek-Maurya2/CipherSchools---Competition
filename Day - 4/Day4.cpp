@@ -48,7 +48,7 @@ public:
         }
         cout << endl;
     }
-    void reverseKGroup(int k) {
+    void reverseK(int k) {
         if (head == nullptr || k == 1) return;
         int count = 0;
         Node *curr = head;
@@ -93,7 +93,7 @@ int main()
     ll.display();
 
     cout << "Linked List after rotation: ";
-    ll.reverseKGroup(k);
+    ll.reverseK(k);
     ll.display();
 
     return 0;
